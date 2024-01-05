@@ -1,4 +1,6 @@
+import emailjs from "emailjs-com";
 import React, { useState } from "react";
+
 const Contact = () => {
   const [form, setForm] = useState({
     name: "",
@@ -6,11 +8,35 @@ const Contact = () => {
     message: "",
     subject: "",
   });
+
   const handleSubmit = async (e) => {
     e.preventDefault();
     console.log("hello", form);
-    //email js here
+
+    const templateParams = {
+      name: form.name,
+      from_email: form.email,
+      subject: form.subject,
+      message: form.message,
+    };
+
+    emailjs
+      .send(
+        "service_hncl1ma",
+        "template_t66ykvt",
+        templateParams,
+        "YtZ9MQPGO8jJoR6EZ"
+      )
+      .then(
+        function (response) {
+          console.log("SUCCESS!", response.status, response.text);
+        },
+        function (error) {
+          console.log("FAILED...", error);
+        }
+      );
   };
+
   return (
     <div
       id="contact"

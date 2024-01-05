@@ -1,6 +1,6 @@
-import React, { useRef } from 'react';
-import { useScroll, motion, spring } from 'framer-motion';
-import LiIcon from './LiIcon';
+import React, { useRef } from "react";
+import { useScroll, motion, spring } from "framer-motion";
+import LiIcon from "./LiIcon";
 
 const Details = ({ type, time, place, info }) => {
   const ref = useRef(null);
@@ -8,7 +8,7 @@ const Details = ({ type, time, place, info }) => {
   return (
     <li
       ref={ref}
-      className='my-8 first:mt-0 last:mb-0 w-[60%] mx-auto flex flex-col items-center justify-between'
+      className="my-8 first:mt-0 last:mb-0 w-[60%] mx-auto flex flex-col items-center justify-between"
     >
       <LiIcon reference={ref} />
       <motion.div
@@ -21,11 +21,11 @@ const Details = ({ type, time, place, info }) => {
           type: spring,
         }}
       >
-        <h3 className='capitalize font-bold text-2xl'>{type}&nbsp;</h3>
-        <span className='capitalize font-medium text-dark/75'>
+        <h3 className="capitalize font-bold text-2xl">{type}&nbsp;</h3>
+        <span className="capitalize font-medium text-dark/75">
           {time} | {place}
         </span>
-        <p className='font-medium  w-full '>{info}</p>
+        <p className="font-medium  w-full ">{info}</p>
       </motion.div>
     </li>
   );
@@ -34,41 +34,40 @@ const Education = () => {
   const ref = useRef(null);
   const { scrollYProgress } = useScroll({
     target: ref,
-    offset: ['start end', 'center start'],
+    offset: ["start end", "center start"],
   });
 
   return (
-    <div className='my-64'>
-      <h2 className='font-bold text-8xl mb-32 w-full text-center'>Education</h2>
-      <div className='w-[75%] mx-auto relative' ref={ref}>
+    <div className="my-64">
+      <h2 className="font-bold text-8xl mb-32 w-full text-center">Education</h2>
+      <div className="w-[75%] mx-auto relative" ref={ref}>
         <motion.div
           style={{ scaleY: scrollYProgress }}
-          className='absolute left-9 top-0 w-[4px] h-full bg-dark origin-top dark:bg-light '
+          className="absolute left-9 top-0 w-[4px] h-full bg-dark origin-top dark:bg-light "
         />
-        <ul className='w-full flex flex-col items-start justify-between ml-4'>
+        <ul className="w-full flex flex-col items-start justify-between ml-4">
           <Details
-            type='Bachelor Of Science In Computer Science'
-            time='2016-2020'
-            place='Massachusetts Institute Of Technology (MIT)'
+            type="Bachelor Of Computer Science (VTU)"
+            time="2017-2021"
+            place="East west intitute of technology (EWIT) Bangalore"
             info={`
             Relevant courses included Data Structures and Algorithms, Computer Systems Engineering, and Artificial 
             Intelligence.`}
           />
           <Details
-            type='Bachelor Of Science In Computer Science'
-            time='2016-2020'
-            place='Massachusetts Institute Of Technology (MIT)'
+            type="Diploma in Computer Science (CTEVT)"
+            time="2010-2013"
+            place="Nepal softech college of computer engineering (NSCCE), Nepal"
             info={`
             Relevant courses included Data Structures and Algorithms, Computer Systems Engineering, and Artificial 
             Intelligence.`}
           />
           <Details
-            type='Bachelor Of Science In Computer Science'
-            time='2016-2020'
-            place='Massachusetts Institute Of Technology (MIT)'
+            type="10th"
+            time="2010 passed out"
+            place="Janta secondary school khurhuriya-5, Saptari, Nepal"
             info={`
-            Relevant courses included Data Structures and Algorithms, Computer Systems Engineering, and Artificial 
-            Intelligence.`}
+            Relevant courses included Math, Science, English, Nepali, Social, Edication, etc.`}
           />
         </ul>
       </div>
