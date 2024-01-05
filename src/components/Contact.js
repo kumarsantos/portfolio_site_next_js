@@ -1,5 +1,6 @@
 import emailjs from "emailjs-com";
 import React, { useState } from "react";
+import { toast } from "react-toastify";
 
 const Contact = () => {
   const [form, setForm] = useState({
@@ -11,8 +12,6 @@ const Contact = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    console.log("hello", form);
-
     const templateParams = {
       name: form.name,
       from_email: form.email,
@@ -29,10 +28,17 @@ const Contact = () => {
       )
       .then(
         function (response) {
-          console.log("SUCCESS!", response.status, response.text);
+          toast("Email has been sent");
+          setForm({
+            name: "",
+            email: "",
+            message: "",
+            subject: "",
+          });
         },
+        // we can right catch like this also this faster than catch block
         function (error) {
-          console.log("FAILED...", error);
+          toast("Something went wrong");
         }
       );
   };
