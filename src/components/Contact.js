@@ -12,6 +12,10 @@ const Contact = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    if (!form.name || !form.email || !form.message || !form.subject) {
+      toast.warn("Please Enter all the details");
+      return;
+    }
     const templateParams = {
       name: form.name,
       from_email: form.email,
@@ -28,7 +32,7 @@ const Contact = () => {
       )
       .then(
         function (response) {
-          toast("Email has been sent");
+          toast.success("Email has been sent");
           setForm({
             name: "",
             email: "",
@@ -38,7 +42,7 @@ const Contact = () => {
         },
         // we can right catch like this also this faster than catch block
         function (error) {
-          toast("Something went wrong");
+          toast.error("Something went wrong");
         }
       );
   };

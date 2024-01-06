@@ -22,7 +22,7 @@ const Details = ({ type, time, place, info }) => {
         }}
       >
         <h3 className="capitalize font-bold text-2xl">{type}&nbsp;</h3>
-        <span className="capitalize font-medium text-dark/75">
+        <span className="capitalize font-medium text-dark/75 dark:text-white">
           {time} | {place}
         </span>
         <p className="font-medium  w-full ">{info}</p>
@@ -63,7 +63,7 @@ const Education = () => {
             Intelligence.`}
           />
           <Details
-            type="10th"
+            type=" SLC (School Leaving Certificate) - 10th"
             time="2010 passed out"
             place="Janta secondary school khurhuriya-5, Saptari, Nepal"
             info={`

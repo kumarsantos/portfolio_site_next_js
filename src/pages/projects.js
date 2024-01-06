@@ -7,6 +7,10 @@ import Link from "next/link";
 import React from "react";
 import Project1 from "../../public/images/projects/crypto-screener-cover-image.jpg";
 import { motion } from "framer-motion";
+import PizzaSiteImg from "../../website_images/pizza_site.png";
+import CourseFinder from "../../website_images/courseFinder.png";
+import LavishWebSite from "../../website_images/lavishWebSite.png";
+import SocialMediaApp from "../../website_images/socialMediaApp.png";
 
 const FramerImage = motion(Image);
 
@@ -134,51 +138,43 @@ const Projects = () => {
             <div className="col-span-12">
               {" "}
               <FeaturedProject
-                type="Featured Project"
-                title="Crypto Screener Application"
-                summary="A feature-rich Crypto Screener App using React, Tailwind CSS, Context API, React Router and Recharts. 
-                It shows detail regarding almost all the cryptocurrency. You can easily convert the price in your 
-                local currency."
-                img={Project1}
-                link="/"
-                gitHubLink="https://github.com"
+                type="Full stack application using Next JS"
+                title="Pizza website"
+                summary={`A website with multiple features like register, login, pizza order with selection of multiple extra ingredients and size, add to cart, order management, and PayPal payment getway, etc. In this project focus was to implement fully functional website, ratherthan UI/UX. `}
+                img={PizzaSiteImg}
+                link="https://pizza-site-mu.vercel.app/"
+                gitHubLink="https://github.com/kumarsantos/pizza_site"
               />
             </div>
             <div className="col-span-6">
               <Project
-                // type='Featured'
-                title="Crypto Screener Application"
-                summary="A feature-rich Crypto Screener App using React, Tailwind CSS, Context API, React Router and Recharts. 
-                It shows detail regarding almost all the cryptocurrency. You can easily convert the price in your 
-                local currency."
-                img={Project1}
-                link="/"
-                gitHubLink="https://github.com"
+                type="Frontend application using React JS"
+                title="Course Finder"
+                summary={`This is the part of the website which allows user to select course and country and based on the input user can see the available university and course details based on the input, etc.`}
+                img={CourseFinder}
+                link="https://shimmering-syrniki-59d333.netlify.app/"
+                gitHubLink="https://github.com/kumarsantos/CourseFinder"
               />
             </div>
             <div className="col-span-6">
               {" "}
               <Project
-                // type='Featured'
-                title="Crypto Screener Application"
-                summary="A feature-rich Crypto Screener App using React, Tailwind CSS, Context API, React Router and Recharts. 
-                It shows detail regarding almost all the cryptocurrency. You can easily convert the price in your 
-                local currency."
-                img={Project1}
-                link="/"
-                gitHubLink="https://github.com"
+                type="Full stack application using  React JS/Express JS/Mongo DB"
+                title="Instagram clone"
+                summary={`Social media application which offers various features like, account creation, login/logout, authorization, post creation, post edit, post delete, comment/like/unlike, user profile, etc.`}
+                img={SocialMediaApp}
+                link="https://github.com/kumarsantos/socialMediaApplication"
+                gitHubLink="https://github.com/kumarsantos/socialMediaApplication"
               />
             </div>
             <div className="col-span-12">
               <FeaturedProject
-                type="Featured Project"
-                title="Crypto Screener Application"
-                summary="A feature-rich Crypto Screener App using React, Tailwind CSS, Context API, React Router and Recharts. 
-                It shows detail regarding almost all the cryptocurrency. You can easily convert the price in your 
-                local currency."
-                img={Project1}
-                link="/"
-                gitHubLink="https://github.com"
+                type="Frontend application using React JS"
+                title="Credit Card Website (Clone)"
+                summary={`Tried to Design and implement Credit card replica website which consists of Navbar,Main section and footer section. In Header section it consists of navigation link and button, via that user can navigate to other page and via button user can register or login. In main section tried to show plan structure of the LAVISH credit card, etc.`}
+                img={LavishWebSite}
+                link="https://reliable-crostata-95998b.netlify.app/"
+                gitHubLink="https://github.com/kumarsantos/Static_websit_clone"
               />
             </div>
             <div className="col-span-6">
