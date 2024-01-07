@@ -11,6 +11,8 @@ import PizzaSiteImg from "../../website_images/pizza_site.png";
 import CourseFinder from "../../website_images/courseFinder.png";
 import LavishWebSite from "../../website_images/lavishWebSite.png";
 import SocialMediaApp from "../../website_images/socialMediaApp.png";
+import EcommerceImg from "../../website_images/ecommerce.png";
+import HetelRoomsBookingImg from "../../website_images/hotelBooking.png";
 
 const FramerImage = motion(Image);
 
@@ -138,6 +140,41 @@ const Projects = () => {
             <div className="col-span-12">
               {" "}
               <FeaturedProject
+                type="Full stack application using (MERN) stack"
+                title="Ecommerce application"
+                summary={`Building a successful e-commerce site involves incorporating a variety of features to ensure a seamless and enjoyable shopping experience for users.
+                 Here's a list of essential e-commerce site features: register, login, reset password, forget password, dashboard, orders, products, cart, profile section, review section, search functionality, etc.`}
+                img={EcommerceImg}
+                link="https://github.com/kumarsantos/e-commerce/tree/master"
+                gitHubLink="https://github.com/kumarsantos/e-commerce/tree/master"
+              />
+            </div>
+            <div className="col-span-6">
+              {" "}
+              <Project
+                type="Full stack application using  React JS/Express JS/Mongo DB"
+                title="Hotel-rooms booking website"
+                summary={`Hotel rooms booking site offers various features like: user register, user login,  hotels and rooms availability based on the input dates, location and number of guests, users also can book, modify existing bookings, etc.`}
+                img={HetelRoomsBookingImg}
+                link="https://github.com/kumarsantos/hotel_booking_site/tree/master"
+                gitHubLink="https://github.com/kumarsantos/hotel_booking_site/tree/master"
+              />
+            </div>
+
+            <div className="col-span-6">
+              {" "}
+              <Project
+                type="Full stack application using  React JS/Express JS/Mongo DB"
+                title="Instagram (Clone)"
+                summary={`Social media application which offers various features like, account creation, login/logout, authorization, post creation, post edit, post delete, comment/like/unlike, user profile, etc.`}
+                img={SocialMediaApp}
+                link="https://github.com/kumarsantos/socialMediaApplication"
+                gitHubLink="https://github.com/kumarsantos/socialMediaApplication"
+              />
+            </div>
+            <div className="col-span-12">
+              {" "}
+              <FeaturedProject
                 type="Full stack application using Next JS"
                 title="Pizza website"
                 summary={`A website with multiple features like register, login, pizza order with selection of multiple extra ingredients and size, add to cart, order management, and PayPal payment getway, etc. In this project focus was to implement fully functional website, ratherthan UI/UX. `}
@@ -149,27 +186,6 @@ const Projects = () => {
             <div className="col-span-6">
               <Project
                 type="Frontend application using React JS"
-                title="Course Finder"
-                summary={`This is the part of the website which allows user to select course and country and based on the input user can see the available university and course details based on the input, etc.`}
-                img={CourseFinder}
-                link="https://shimmering-syrniki-59d333.netlify.app/"
-                gitHubLink="https://github.com/kumarsantos/CourseFinder"
-              />
-            </div>
-            <div className="col-span-6">
-              {" "}
-              <Project
-                type="Full stack application using  React JS/Express JS/Mongo DB"
-                title="Instagram clone"
-                summary={`Social media application which offers various features like, account creation, login/logout, authorization, post creation, post edit, post delete, comment/like/unlike, user profile, etc.`}
-                img={SocialMediaApp}
-                link="https://github.com/kumarsantos/socialMediaApplication"
-                gitHubLink="https://github.com/kumarsantos/socialMediaApplication"
-              />
-            </div>
-            <div className="col-span-12">
-              <FeaturedProject
-                type="Frontend application using React JS"
                 title="Credit Card Website (Clone)"
                 summary={`Tried to Design and implement Credit card replica website which consists of Navbar,Main section and footer section. In Header section it consists of navigation link and button, via that user can navigate to other page and via button user can register or login. In main section tried to show plan structure of the LAVISH credit card, etc.`}
                 img={LavishWebSite}
@@ -178,29 +194,13 @@ const Projects = () => {
               />
             </div>
             <div className="col-span-6">
-              {" "}
               <Project
-                // type='Featured'
-                title="Crypto Screener Application"
-                summary="A feature-rich Crypto Screener App using React, Tailwind CSS, Context API, React Router and Recharts. 
-                It shows detail regarding almost all the cryptocurrency. You can easily convert the price in your 
-                local currency."
-                img={Project1}
-                link="/"
-                gitHubLink="https://github.com"
-              />
-            </div>
-            <div className="col-span-6">
-              {" "}
-              <Project
-                // type='Featured'
-                title="Crypto Screener Application"
-                summary="A feature-rich Crypto Screener App using React, Tailwind CSS, Context API, React Router and Recharts. 
-                It shows detail regarding almost all the cryptocurrency. You can easily convert the price in your 
-                local currency."
-                img={Project1}
-                link="/"
-                gitHubLink="https://github.com"
+                type="Frontend application using React JS"
+                title="Course Finder"
+                summary={`Tried to Design and implement Course finder module, This is the part of the another website which allows user to select course and country and based on the input user can see the available university and course details based on the input. It also offers price transparency of the course, etc.`}
+                img={CourseFinder}
+                link="https://shimmering-syrniki-59d333.netlify.app/"
+                gitHubLink="https://github.com/kumarsantos/CourseFinder"
               />
             </div>
           </div>

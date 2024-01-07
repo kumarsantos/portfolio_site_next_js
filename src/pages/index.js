@@ -45,7 +45,7 @@ export default function Home() {
               </p>
               <div className="flex gap-2 items-center self-start mt-2 ">
                 <Link
-                  href="/dummy.pdf"
+                  href="https://drive.google.com/file/d/1mXbx_h91VlCfbr8Hk9WtldhkKyQAT9zZ/view"
                   target="_black"
                   download={true}
                   className="flex items-center bg-dark text-light  hover:bg-light hover:text-dark p-2.5 px-6 rounded-lg text-lg font-semibold border-2 border-solid border-transparent dark:bg-light/90 dark:text-dark hover:dark:bg-dark hover:dark:text-light   hover:border-dark hover:dark:border-light  "
